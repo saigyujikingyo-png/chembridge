@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "shared_rule_version": "2026-09-13.1",
+  "projects": [
+    {
+      "id": "origin",
+      "name": "Origin Companion",
+      "repository": "https://github.com/saigyujikingyo-png/origin-agent-bridge",
+      "default_branch": "codex/origin-companion-release",
+      "cloud_environment": "Chembridge / Origin Companion",
+      "stage": "Windows preview; portable tests and separate native acceptance"
+    },
+    {
+      "id": "chemdraw",
+      "name": "ChemDraw Companion",
+      "repository": "https://github.com/saigyujikingyo-png/chemdraw-companion",
+      "default_branch": "main",
+      "cloud_environment": "Chembridge / ChemDraw Companion",
+      "stage": "Architecture preview on main; native implementation has separate gates"
+    },
+    {
+      "id": "uoe",
+      "name": "UoE Companion",
+      "repository": "https://github.com/saigyujikingyo-png/edinburgh-study-agent",
+      "default_branch": "main",
+      "cloud_environment": "Chembridge / UoE Companion",
+      "stage": "Student-workflow release; account-specific acceptance remains separate"
+    }
+  ]
+}

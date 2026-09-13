@@ -1,0 +1,28 @@
+{
+  "origin": {
+    "setup": "bash origin-agent/scripts/setup_codex_cloud.sh",
+    "maintenance": "bash origin-agent/scripts/setup_codex_cloud.sh",
+    "checks": [
+      "cd origin-agent && uv run ruff check . && uv run ruff format --check . && uv run pytest -q"
+    ],
+    "scope": "Portable core tests; not native Origin or all host/model workflows"
+  },
+  "chemdraw": {
+    "setup": "bash scripts/setup_codex_cloud.sh",
+    "maintenance": "bash scripts/setup_codex_cloud.sh",
+    "checks": [
+      ".venv/bin/python contracts/validate_mechanism_fixture.py examples/m2-beckmann-snake.json"
+    ],
+    "scope": "Bounded architecture contract and logical fixture validation; not native rendering or model acceptance"
+  },
+  "uoe": {
+    "setup": "bash scripts/setup_codex_cloud.sh",
+    "maintenance": "bash scripts/setup_codex_cloud.sh",
+    "checks": [
+      ".venv/bin/python -m pytest -q",
+      ".venv/bin/python scripts/smoke_mcp.py",
+      ".venv/bin/python scripts/public_release.py --git-index"
+    ],
+    "scope": "Portable core, synthetic browser and stdio protocol tests; no live campus account"
+  }
+}
