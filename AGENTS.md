@@ -1,8 +1,8 @@
 # Chembridge contributor entrypoint
 
-Read DEVELOPMENT_PRINCIPLES.md (shared rule version 2026-09-13.1), then CLOUD_DEVELOPMENT.md and project-catalog.json before work. Chembridge is the umbrella for university convenience plugins, professional-software plugins, and agent workflows; it is not another name for Origin Companion.
+Read DEVELOPMENT_PRINCIPLES.md (shared rule version 2026-09-13.2), then CLOUD_DEVELOPMENT.md and project-catalog.json before work. Chembridge is the umbrella for university convenience plugins, professional-software plugins, and agent workflows; it is not another name for Origin Companion.
 
-Use this repository for shared standards, new-plugin planning, project discovery and cloud setup templates. Implement a product in its own repository and matching cloud environment. Preserve its own native, safety, compatibility, ownership and acceptance requirements. Do not automatically send messages or relay status between independent product tasks.
+Use this repository for shared standards, new-plugin planning, project discovery and cloud setup templates. Implement a product in its own repository and matching cloud environment. Preserve its own native, safety, compatibility, ownership and acceptance requirements. Routine messages between existing user-owned Chembridge tasks are preauthorised under DEVELOPMENT_PRINCIPLES.md section 11; no per-message confirmation is needed within that scope. Preserve each task's objective, source ownership and separate acceptance evidence.
 
 Shared targets are ChatGPT Chat, local Work, cloud Work, Codex, Claude, WorkBuddy and other suitable agents. Use one identity and host-neutral core per plugin with thin adapters. Codex is both a development tool and a target user host. Ordinary plugin users do not need a coding project. Public content is English, open-source and suitable for GitHub Releases. GPT-5.6 Terra with max reasoning is the benchmark, subject to actual availability and evidence.
 

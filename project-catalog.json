@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "shared_rule_version": "2026-09-13.1",
+  "shared_rule_version": "2026-09-13.2",
   "projects": [
     {
       "id": "origin",

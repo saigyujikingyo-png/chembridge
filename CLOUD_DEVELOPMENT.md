@@ -14,9 +14,11 @@ The current product scopes differ: Origin has a portable Python suite; ChemDraw 
 
 ## Shared rules
 
-DEVELOPMENT_PRINCIPLES.md is the current shared baseline, version 2026-09-13.1. Each participating repository must include that baseline and an AGENTS.md entry requiring it, while retaining product-specific constraints. Update known copies deliberately when the baseline changes; do not assume old tasks have reloaded it.
+DEVELOPMENT_PRINCIPLES.md is the current shared baseline, version 2026-09-13.2. Each participating repository must include that baseline and an AGENTS.md entry requiring it, while retaining product-specific constraints. Update known copies deliberately when the baseline changes; do not assume old tasks have reloaded it.
 
 Keep code and dependency environments outside cloud-synced folders. The private university Chembridge folder remains the materials entrypoint. The hub contains small public documentation, a catalog and setup conventions. Cloud setup is not automatic local disk cleanup.
+
+Routine messages between existing user-owned Chembridge tasks are preauthorised under DEVELOPMENT_PRINCIPLES.md section 11; no per-message confirmation is needed within that scope. Preserve each task's objective, source ownership and separate acceptance evidence. This updates the earlier default against cross-product message relays.
 
 ## Desktop and Web
 
