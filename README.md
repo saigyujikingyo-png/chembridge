@@ -12,9 +12,11 @@ Open [Codex cloud environments](https://chatgpt.com/codex/cloud/settings/environ
 | --- | --- | --- | --- |
 | Origin Companion | [origin-agent-bridge](https://github.com/saigyujikingyo-png/origin-agent-bridge) | Chembridge / Origin Companion | Portable Python tests; native Origin stays on a licensed Windows executor |
 | ChemDraw Companion | [chemdraw-companion](https://github.com/saigyujikingyo-png/chemdraw-companion) | Chembridge / ChemDraw Companion | Current main-branch architecture contracts; native work has separate gates |
-| UoE Companion | [edinburgh-study-agent](https://github.com/saigyujikingyo-png/edinburgh-study-agent) | Chembridge / UoE Companion | Portable tests, synthetic browser tests and MCP smoke checks; no campus login is copied |
+| UoE Companion | [edinburgh-study-agent](https://github.com/saigyujikingyo-png/edinburgh-study-agent) | Chembridge / UoE Companion | Portable tests and MCP smoke checks; four browser tests require non-root CI; no campus login is copied |
 
 Read [cloud development](CLOUD_DEVELOPMENT.md), the [project catalog](project-catalog.json) and the [shared principles](DEVELOPMENT_PRINCIPLES.md). This catalog records the current participating products, not all repositories owned by the maintainer. Historical prototypes and unrelated projects are not inferred to be active Chembridge products.
+
+The [13 September 2026 configuration receipt](verification/2026-09-13-cloud-workspace.md) records all four saved environments, actual container checks and separate CI results.
 
 ## Shared direction
 

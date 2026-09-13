@@ -19,10 +19,10 @@
     "setup": "bash scripts/setup_codex_cloud.sh",
     "maintenance": "bash scripts/setup_codex_cloud.sh",
     "checks": [
-      ".venv/bin/python -m pytest -q",
+      ".venv/bin/python -m pytest -q -rs",
       ".venv/bin/python scripts/smoke_mcp.py",
       ".venv/bin/python scripts/public_release.py --git-index"
     ],
-    "scope": "Portable core, synthetic browser and stdio protocol tests; no live campus account"
+    "scope": "Portable core and stdio protocol tests; four sandboxed DOM tests skip under root and run in non-root CI; no live campus account"
   }
 }

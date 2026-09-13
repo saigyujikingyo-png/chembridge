@@ -10,7 +10,7 @@ For each product, cloud/profiles.json records the setup entrypoint and actual ve
 
 Enable the common-dependencies network preset and only the extra official documentation domains needed by a task. This baseline uses GET, HEAD and OPTIONS during the agent phase; setup and maintenance have their own dependency-installation access. Native desktop software and campus-account acceptance run separately on authorised execution devices.
 
-The current product scopes differ: Origin has a portable Python suite; ChemDraw main is an architecture preview; UoE includes synthetic DOM tests requiring Chrome in its cloud container. A cloud setup pass does not turn an architecture preview into a released native plugin or verify a university account workflow.
+The current product scopes differ: Origin has a portable Python suite; ChemDraw main is an architecture preview; UoE includes four synthetic DOM tests requiring sandboxed Chrome on a non-root runner. The root Codex container explicitly skips those four checks and avoids the unused Chrome download; the existing Ubuntu/Windows CI matrix remains the full DOM gate. A cloud setup pass does not turn an architecture preview into a released native plugin or verify a university account workflow.
 
 ## Shared rules
 
