@@ -2,6 +2,26 @@
 
 Date: 14 September 2026. Shared principles: **2026-09-14.1**.
 
+## Corrective preview 0.1.1
+
+The 0.1.0 release-commit CI exposed intermittent Windows access denial while
+acquiring the local budget lock. Version 0.1.1 bounds retries of local lock
+acquisition and returns a stable busy/inaccessible error if denial persists;
+the fix never retries provider requests. Public output contract 1.0 is unchanged.
+
+Corrective runtime SHA: `30ed044c3371732c99772b67a8ec0ed68234f9af`.
+All six public Windows/Ubuntu Python 3.11/3.12/3.13 CI jobs passed at that SHA:
+https://github.com/saigyujikingyo-png/code-relay/actions/runs/34876588452.
+The product receipt includes synthetic regression/stress checks and package
+hashes. Private installation and cloud acceptance metadata is excluded from
+this update and retained in the private development task.
+
+Current distribution: https://github.com/saigyujikingyo-png/code-relay/releases/tag/v0.1.1.
+Evidence: product `verification/2026-09-14-preview-0.1.1.md`.
+The earlier release and record below remain historical evidence.
+
+## Initial registration and 0.1.0 history
+
 Code Relay is an independent MIT-licensed, Codex-first coding-workflow plugin.
 Its host-neutral standard-library core delegates bounded routine work to
 user-configured OpenAI-compatible and Anthropic models. Architecture, advanced
