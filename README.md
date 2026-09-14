@@ -20,7 +20,7 @@ The [13 September 2026 configuration receipt](verification/2026-09-13-cloud-work
 
 ## Shared direction
 
-One plugin identity per product across ChatGPT Chat, local Work, cloud Work, Codex and other suitable agents; easy installation for non-developers; economical-model support with GPT-5.6 Terra + max as the benchmark; task-specific Edinburgh requirements; lightweight execution and efficient quota use. These are targets, not blanket acceptance claims.
+One plugin identity per product across ChatGPT Chat, local Work, cloud Work, Codex and other suitable agents; easy installation for non-developers; economical-model support with GPT-5.6 Terra + max as the benchmark; task-specific Edinburgh requirements; lightweight execution and efficient quota use. All plugins must implement validated structured output contracts and meaningful MCP output schemas; see shared principles section 12. These are targets, not blanket acceptance claims.
 
 Public source, documentation and releases belong on GitHub under an explicit licence. Private course materials, licensed vendor software, credentials and individual account data stay private. University OneDrive is a development archive preference and does not become a required destination for users' results.
 

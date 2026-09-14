@@ -1,6 +1,6 @@
 # Chembridge contributor entrypoint
 
-Read DEVELOPMENT_PRINCIPLES.md (shared rule version 2026-09-13.2), then CLOUD_DEVELOPMENT.md and project-catalog.json before work. Chembridge is the umbrella for university convenience plugins, professional-software plugins, and agent workflows; it is not another name for Origin Companion.
+Read DEVELOPMENT_PRINCIPLES.md (shared rule version 2026-09-14.1), then CLOUD_DEVELOPMENT.md and project-catalog.json before work. Chembridge is the umbrella for university convenience plugins, professional-software plugins, and agent workflows; it is not another name for Origin Companion.
 
 Use this repository for shared standards, new-plugin planning, project discovery and cloud setup templates. Implement a product in its own repository and matching cloud environment. Preserve its own native, safety, compatibility, ownership and acceptance requirements. Routine messages between existing user-owned Chembridge tasks are preauthorised under DEVELOPMENT_PRINCIPLES.md section 11; no per-message confirmation is needed within that scope. Preserve each task's objective, source ownership and separate acceptance evidence.
 
@@ -13,3 +13,5 @@ Private university OneDrive is a materials/archive entrypoint, not a Git checkou
 Configuration checks, portable tests, model-based cloud tasks, desktop handoff and native-software acceptance are separate evidence. Do not claim one from another. The confirmed OpenAI local Work project-sync frontend bug remains out of scope; do not change caches, registrations or application internals to repair it.
 
 When adding a new plugin, follow templates/NEW_PLUGIN.md and register its repository, setup and checks. Existing GitHub authorisation may cover a new repository, but a matching Codex cloud environment must still be created and verified. Do not claim automatic future environment creation.
+
+Every Chembridge plugin must implement and validate meaningful tool output schemas and structured results under DEVELOPMENT_PRINCIPLES.md section 12. Preserve media delivery and host compatibility, keep schemas compact, and record implementation/acceptance gaps separately.

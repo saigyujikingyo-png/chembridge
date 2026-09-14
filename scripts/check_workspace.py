@@ -14,7 +14,8 @@ for item in catalog["projects"]:
     assert item["default_branch"] and item["cloud_environment"]
     assert profiles[item["id"]]["setup"] and profiles[item["id"]]["checks"]
     assert profiles[item["id"]]["scope"]
-assert "2026-09-13.2" in (root / "DEVELOPMENT_PRINCIPLES.md").read_text(encoding="utf-8")
+principles = (root / "DEVELOPMENT_PRINCIPLES.md").read_text(encoding="utf-8")
+assert f"Rule version: **{catalog['shared_rule_version']}**" in principles, "Shared rule version mismatch"
 links = 0
 for doc in [*root.glob("*.md"), *root.glob("templates/*.md")]:
     for target in re.findall(r"\]\(([^)]+)\)", doc.read_text(encoding="utf-8")):
