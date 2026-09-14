@@ -24,5 +24,16 @@
       ".venv/bin/python scripts/public_release.py --git-index"
     ],
     "scope": "Portable core and stdio protocol tests; four sandboxed DOM tests skip under root and run in non-root CI; no live campus account"
+  },
+  "code-relay": {
+    "setup": "bash scripts/setup_codex_cloud.sh",
+    "maintenance": "bash scripts/setup_codex_cloud.sh",
+    "checks": [
+      "python -m unittest discover -s tests -q",
+      "python scripts/smoke_mcp.py",
+      "python -m code_relay self-test",
+      "python scripts/check_release.py"
+    ],
+    "scope": "Standard-library core, output contracts and synthetic OpenAI-compatible/Anthropic HTTP; headless Tk skip; live ELM, installed host model and Terra max gates remain separate"
   }
 }

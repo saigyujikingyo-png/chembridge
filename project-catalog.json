@@ -25,6 +25,14 @@
       "default_branch": "main",
       "cloud_environment": "Chembridge / UoE Companion",
       "stage": "Student-workflow release; account-specific acceptance remains separate"
+    },
+    {
+      "id": "code-relay",
+      "name": "Code Relay",
+      "repository": "https://github.com/saigyujikingyo-png/code-relay",
+      "default_branch": "codex/initial-preview",
+      "cloud_environment": "Chembridge / Code Relay",
+      "stage": "Codex-first coding delegation preview; installed runtime and synthetic API checks; live providers and model benchmarks separate"
     }
   ]
 }
