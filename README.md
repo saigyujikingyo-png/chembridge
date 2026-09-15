@@ -13,6 +13,7 @@ Open [Codex cloud environments](https://chatgpt.com/codex/cloud/settings/environ
 | Origin Companion | [origin-agent-bridge](https://github.com/saigyujikingyo-png/origin-agent-bridge) | Chembridge / Origin Companion | Portable Python tests; native Origin stays on a licensed Windows executor |
 | ChemDraw Companion | [chemdraw-companion](https://github.com/saigyujikingyo-png/chemdraw-companion) | Chembridge / ChemDraw Companion | Current main-branch architecture contracts; native work has separate gates |
 | UoE Companion | [edinburgh-study-agent](https://github.com/saigyujikingyo-png/edinburgh-study-agent) | Chembridge / UoE Companion | Portable tests and MCP smoke checks; four browser tests require non-root CI; no campus login is copied |
+| Mnova Companion | [mnova-companion](https://github.com/saigyujikingyo-png/mnova-companion) | Chembridge / Mnova Companion | Portable MCP core; native lifecycle gate failed and writes disabled; initial cloud setup passed, current implementation container checks pending |
 
 Read [cloud development](CLOUD_DEVELOPMENT.md), the [project catalog](project-catalog.json) and the [shared principles](DEVELOPMENT_PRINCIPLES.md). This catalog records the current participating products, not all repositories owned by the maintainer. Historical prototypes and unrelated projects are not inferred to be active Chembridge products.
 
@@ -27,6 +28,10 @@ Public source, documentation and releases belong on GitHub under an explicit lic
 ## Add a plugin
 
 Follow the [new-plugin checklist](templates/NEW_PLUGIN.md). Reuse shared rules and cloud setup conventions without merging unrelated runtimes. New repositories still need their own Codex environment and actual checks.
+
+### Plugin plans
+
+- [Mnova Companion architecture and implementation plan](plans/MNOVA_COMPANION_PLAN.md) — implementation approved; independent repository and cloud environment created. See the [development checkpoint](verification/2026-09-15-mnova-development.md) for portable checks and the failed native lifecycle gate.
 
 This hub has no third-party runtime dependencies:
 

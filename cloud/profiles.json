@@ -35,5 +35,18 @@
       "python scripts/check_release.py"
     ],
     "scope": "Standard-library core, output contracts and synthetic OpenAI-compatible/Anthropic HTTP; headless Tk skip; live ELM, installed host model and Terra max gates remain separate"
+  },
+  "mnova": {
+    "setup": "bash scripts/setup_codex_cloud.sh",
+    "maintenance": "bash scripts/setup_codex_cloud.sh",
+    "checks": [
+      ".venv/bin/ruff check src tests scripts mnova_adapter",
+      ".venv/bin/ruff format --check src tests scripts mnova_adapter",
+      ".venv/bin/python -m pytest -q",
+      ".venv/bin/python scripts/check_contracts.py",
+      ".venv/bin/python scripts/smoke_mcp.py",
+      ".venv/bin/python scripts/check_release.py"
+    ],
+    "scope": "Portable core, structured output contracts and actual MCP stdio only; native lifecycle failed and scientific writes disabled. Saved cloud environment initial setup passed; implementation-revision container checks, host/model and file delivery remain separate."
   }
 }
