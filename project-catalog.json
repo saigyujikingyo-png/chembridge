@@ -40,7 +40,7 @@
       "repository": "https://github.com/saigyujikingyo-png/mnova-companion",
       "default_branch": "codex/initial-preview",
       "cloud_environment": "Chembridge / Mnova Companion",
-      "stage": "Current-device Codex preview installed with original icon and verified MCP runtime; native lifecycle failure unresolved and writes disabled; next native implementation awaits approval"
+      "stage": "Current-device Codex preview installed; approved R0/R1 harness implemented, R0 session creation failed before ownership and R1 not run; native writes disabled"
     },
     {
       "id": "matlab",

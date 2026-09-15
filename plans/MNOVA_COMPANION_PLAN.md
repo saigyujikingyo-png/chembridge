@@ -18,8 +18,10 @@ testing subsequently failed and production scientific writes remain disabled.
 Follow-up: an original icon and current-device Codex preview are now installed.
 See the [installation record](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/INSTALLATION.md)
 and [assessment with the next technical route](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/NEXT_TECHNICAL_ROUTE.md).
-The native failure is unresolved; the next pure-Python lifecycle experiment is a
-proposal awaiting confirmation, and its implementation has not started.
+The user subsequently approved R0/R1 development. Its session-lifecycle harness is
+implemented, but R0 failed during creation before sentinel ownership was established;
+R1 was not run. See the [R0 decision record](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/SESSION_LIFECYCLE_R0.md).
+Production and acceptance native mutations remain disabled.
 
 ## 1. Decision and scope
 
