@@ -15,6 +15,12 @@ and [product status](https://github.com/saigyujikingyo-png/mnova-companion/blob/
 The design-stage ledger below is retained as a historical baseline; native lifetime
 testing subsequently failed and production scientific writes remain disabled.
 
+Follow-up: an original icon and current-device Codex preview are now installed.
+See the [installation record](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/INSTALLATION.md)
+and [assessment with the next technical route](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/NEXT_TECHNICAL_ROUTE.md).
+The native failure is unresolved; the next pure-Python lifecycle experiment is a
+proposal awaiting confirmation, and its implementation has not started.
+
 ## 1. Decision and scope
 
 Build one agent-facing plugin that turns natural-language requests into reproducible operations in a user's licensed MestReNova installation. Its primary deliverable is an editable native `.mnova` document, accompanied by useful figures, numerical tables, processing provenance and separately recorded delivery evidence.
