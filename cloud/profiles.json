@@ -59,6 +59,6 @@
       "uv run python scripts/smoke_mcp.py",
       "uv run python scripts/check_release.py"
     ],
-    "scope": "Portable Python core, structured output contracts, setup boundaries and actual MCP stdio checks. Dedicated Chembridge / MATLAB Companion environment saved; f3e1e67 cloud-container checks passed. Native MATLAB, installation and host/model delivery retain separate product evidence."
+    "scope": "Portable Python core, structured output contracts, setup boundaries and actual MCP stdio checks. Dedicated Chembridge / MATLAB Companion environment saved; c5c7317 cloud-container checks passed (163 tests, one Windows-only skip). Native MATLAB, installation and host/model delivery retain separate product evidence."
   }
 }
