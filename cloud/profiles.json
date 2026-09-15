@@ -48,5 +48,17 @@
       ".venv/bin/python scripts/check_release.py"
     ],
     "scope": "Portable core, structured output contracts and actual MCP stdio only; native lifecycle failed and scientific writes disabled. Saved cloud environment initial setup passed; implementation-revision container checks, host/model and file delivery remain separate."
+  },
+  "matlab": {
+    "setup": "bash scripts/setup_codex_cloud.sh",
+    "maintenance": "bash scripts/setup_codex_cloud.sh",
+    "checks": [
+      "uv run pytest -q",
+      "uv run ruff check src scripts tests acceptance",
+      "uv run python scripts/check_contracts.py",
+      "uv run python scripts/smoke_mcp.py",
+      "uv run python scripts/check_release.py"
+    ],
+    "scope": "Portable Python core, structured output contracts, setup boundaries and actual MCP stdio checks. Dedicated Chembridge / MATLAB Companion environment saved; f3e1e67 cloud-container checks passed. Native MATLAB, installation and host/model delivery retain separate product evidence."
   }
 }
