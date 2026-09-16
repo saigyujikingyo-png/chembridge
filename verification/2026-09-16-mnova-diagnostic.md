@@ -2,6 +2,10 @@
 
 Date: 2026-09-16. Shared principles: 2026-09-14.1.
 
+Historical checkpoint, followed by [bounded main-window R0 and failed R1](2026-09-16-mnova-r1.md).
+The observations below remain as recorded; current status is R0 PASSED BOUNDED,
+R1 FAILED, with all native writes and the separate target-close gate disabled.
+
 Product code revision:
 [`a5f9cd5`](https://github.com/saigyujikingyo-png/mnova-companion/commit/a5f9cd5c4f20b451bfc2243b9732d191b8de073e).
 Implementation remains in the product repository; the hub records discovery and

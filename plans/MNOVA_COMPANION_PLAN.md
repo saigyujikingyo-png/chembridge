@@ -23,9 +23,12 @@ implemented. After the [original R0 failure](https://github.com/saigyujikingyo-p
 the [2026-09-16 diagnostic](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/SESSION_DIAGNOSTIC_20260916.md)
 fixed zero-page canvas observation and passed session creation plus independent
 synthetic readback. Existing-document activation returned without changing the
-active document or visible tab. R0 is partial; genuine dirty state and R1 are
-unverified. Production and shipped acceptance mutations remain disabled.
-See the [current hub checkpoint](../verification/2026-09-16-mnova-diagnostic.md).
+active document or visible tab. A distinct main-window New action subsequently
+passed visible ownership, genuine dirty state and independent readback: R0 passed
+within that bounded scope. R1 then failed: its target-close sequence removed the
+protected synthetic sentinel while retaining the intended target. All native
+writes stopped and a dedicated close gate is disabled. Scientific workflows
+remain blocked. See the [current hub checkpoint](../verification/2026-09-16-mnova-r1.md).
 
 ## 1. Decision and scope
 
