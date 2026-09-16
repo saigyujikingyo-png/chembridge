@@ -48,7 +48,7 @@
       "repository": "https://github.com/saigyujikingyo-png/matlab-companion",
       "default_branch": "codex/initial-preview",
       "cloud_environment": "Chembridge / MATLAB Companion",
-      "stage": "Windows alpha.2 R1 released; runtime/source 41f9cf7 passed CI and final-package native acceptance (five operations, six cases, R2026a Update 5); current-device alpha.1-to-alpha.2 upgrade and registered-command read-only MCP probe passed; saved-cloud portable checks and Codex Terra max workflow remain alpha.1 historical evidence, not rerun for alpha.2; clean-device and other-host acceptance remain open"
+      "stage": "Windows alpha.3 R2 released; runtime/source 1b2eb73 passed Windows/Ubuntu CI, exact-package three-case native lifecycle and six scientific cases with 43 original-file readbacks on R2026a Update 5; current-device alpha.2-to-alpha.3 upgrade and registered-command probe passed with prior settings/jobs/alpha.2 preserved; one Codex kinetics job and seven-file delivery passed after operator/model corrections (Terra max requested, resolved model metadata unavailable); saved-cloud evidence remains historical, fresh-device and other-host gates open; R3 not started"
     }
   ]
 }
