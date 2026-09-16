@@ -19,9 +19,13 @@ Follow-up: an original icon and current-device Codex preview are now installed.
 See the [installation record](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/INSTALLATION.md)
 and [assessment with the next technical route](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/NEXT_TECHNICAL_ROUTE.md).
 The user subsequently approved R0/R1 development. Its session-lifecycle harness is
-implemented, but R0 failed during creation before sentinel ownership was established;
-R1 was not run. See the [R0 decision record](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/SESSION_LIFECYCLE_R0.md).
-Production and acceptance native mutations remain disabled.
+implemented. After the [original R0 failure](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/SESSION_LIFECYCLE_R0.md),
+the [2026-09-16 diagnostic](https://github.com/saigyujikingyo-png/mnova-companion/blob/codex/initial-preview/docs/SESSION_DIAGNOSTIC_20260916.md)
+fixed zero-page canvas observation and passed session creation plus independent
+synthetic readback. Existing-document activation returned without changing the
+active document or visible tab. R0 is partial; genuine dirty state and R1 are
+unverified. Production and shipped acceptance mutations remain disabled.
+See the [current hub checkpoint](../verification/2026-09-16-mnova-diagnostic.md).
 
 ## 1. Decision and scope
 
