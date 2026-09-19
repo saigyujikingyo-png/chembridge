@@ -7,9 +7,9 @@ This ledger records adoption and ownership separately from product acceptance. P
 | Product | Current owner evidence | Handoff/takeover | Rule adoption | Lifecycle work / required next gate |
 | --- | --- | --- | --- | --- |
 | Origin | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership verified; no Ultra transfer | Product lifecycle candidate reviewed | 0.2.12 public prerelease and controlled two-account installation accepted; exact release-head Windows/Ubuntu CI passed. A current Governance connector status call returned 0.2.12 on the intended device. Separate account UI, rollback and OS-event gates remain open |
-| UoE | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership and understanding verified | Product lifecycle candidate reviewed | 0.8.2 public prerelease at 88fbf736; PR merged as 01deb3b and six public assets verified. Corrected finite maintenance helper accepted. Installed 0.8.1 connections preserved pending normal host release and controlled upgrade |
+| UoE | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership and understanding verified | Product lifecycle candidate reviewed | 0.8.2 public prerelease at 88fbf736; PR merged as 01deb3b and six public assets verified. First external attempt stopped before mutation on an optional task-XML field. Adapter-only R3 correction passed 87 independent tests and real read-only task checks. A separate linked recovery entry is ready; installed 0.8.1 remains pending controlled upgrade |
 | MATLAB | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Published product commit 34e2cf1, pinned to shared 922d950 | Alpha.4 public engineering prerelease at package source 8dc506c4; four downloaded assets independently verified. Fixture-only validation head 0305bb83 and isolated P2 c92328e0 passed all five Windows/Ubuntu CI runs. P1 staged once with 4,058 files verified; matching Apply review reissued. Alpha.3 remains active pending normal host release and fresh admission; P2 remains source-only |
-| Mnova | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Adopted in isolated candidate 1f24531 | dev2 public prerelease and official installed plugin verified at e22718c; nine raw modules and 65 source/cache files match. Governance's actual status call at 16:19 UTC still returned dev1 through its old connection; normal host pickup remains open. Original product/Hub work preserved; native writes and close disabled |
+| Mnova | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Adopted in isolated candidate 1f24531 | dev2 public prerelease and official installed plugin verified at e22718c; nine raw modules and 65 source/cache files match. After normal host reopen, Governance's actual status call at 16:56 UTC returned dev2; the earlier dev1 observation is retained. Original product/Hub work preserved; native writes and close disabled |
 | ChemDraw | Local Astra Max owns development; source architecture Astra Ultra; remote source model unresolved | MAX_VERIFYING; understanding accepted; historical native materials incomplete | Adopted in reviewed c6cfa3ec source | Diagnostic-only 0.2.0-preview.1 publicly released and locally installed through its reviewed installer and official MCP registration. Independent 51-file installed parity and connection readback passed; 79 focused tests passed, one privilege skip. Fresh host-model acceptance remains open; native execution stays frozen and legacy ChemAIst remains separate |
 | Code Relay | Existing Astra Max, verified task metadata | MIGRATED; existing sole Max ownership and understanding verified | Published product commit 77469d2, pinned to shared 922d950 | docs.1 resource-installation repair 52fd007 publicly released and officially installed; 20 raw source/cache resources match. Runtime stays 0.1.1, old sessions await normal pickup; CLR-LC-01 through 05 remain open |
 
@@ -91,3 +91,26 @@ The private materials entrypoint's old shared-rule copy was compared with the or
 MATLAB handoff adds an important distinction: one `_ensure()` call does not spawn twice after its startup timeout, but a subsequent call may attempt another startup because attempt identity is not persisted before readiness. The coordinator lifetime lock still prevents a second Core. A not-ready coordinator can already own recovered accepted work; do not blindly terminate it. This is a source-review risk requiring focused regression, not a proven duplicate scientific execution or autostart defect.
 
 Governance's preliminary UoE review required regressions for children born during cleanup and multiple logical MCP child chains. These source-review blockers were corrected and verified in the reviewed 0.8.2 candidate. The still-installed 0.8.1 transport has not been relabelled as that fix; activation requires a reviewed finite maintenance entrypoint and normal release of host-owned frontends.
+
+## First external maintenance attempt
+
+The user ran the reviewed external entry at 16:54 UTC and reopened the host. UoE
+stopped at preflight with TASK_ENABLED_UNAVAILABLE, before any effect, baseline
+or backup. MATLAB was never started by that entry. Current UoE remains 0.8.1;
+Mnova's fresh actual tool call returned dev2.
+
+The private maintenance adapter wrongly required an explicit Settings.Enabled
+XML element. Both real task exports omit it while CIM reports Enabled=true; the
+complete [Microsoft Task Scheduler schema](https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-schema)
+permits that default representation. The R3 adapter validates actual state and
+normalizes only the task Enabled preference, preserving trigger and other task
+definition checks. Governance independently passed 87 isolated regressions and
+reviewed both real read-only task guards. Product package and transaction engine
+are unchanged.
+
+The failed no-effect predecessor is sealed. A separate one-shot recovery entry
+checks that record, links a new explicit attempt, and starts MATLAB only after
+UoE's actual activation journal confirms success. Nine isolated runner scenarios
+and the final 22-input read-only check passed. Original markers and failed logs
+remain intact; no new live Apply has occurred. A normal host release and fresh
+product admission are still required.
