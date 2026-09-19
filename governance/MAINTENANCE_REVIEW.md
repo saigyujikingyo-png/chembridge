@@ -105,3 +105,32 @@ original package and every non-test tracked input remain unchanged. The public
 verification record separates the package source commit from the later test
 commit and retains the original failed CI. A temporary maintenance hold and
 revoked review were preserved as history before issuing a new matching review.
+
+## Nested command strings use a different parser
+
+UoE 0.8.2's installed files passed verification and its direct model status tool
+returned 0.8.2, while both background account connections failed. Original client
+logs showed that the nested MCP command lost Windows path backslashes before
+process creation. `subprocess.list2cmdline` prepares Windows argument syntax; it
+does not establish compatibility with a separate client's command-string parser.
+The earlier working launcher used a quoted forward-slash path. Origin's two
+tracked command builders use the same convention. The other four audited product
+repositories had no tracked `--mcp-command` usage; this limited source search is
+not whole-product runtime acceptance.
+
+Preserve the original failed startup submissions and reconcile their exact
+owners before a corrective activation. Installation bytes, direct stdio calls
+and background connection health are separate gates. A completed installation
+must not be repeated merely because its later activation check failed.
+
+## Empty-parameter smoke tests do not prove host discovery
+
+ChemDraw diagnostic preview.1 passed installed-file and direct stdio checks,
+but the actual Codex startup log rejected tool discovery with -32602. Its
+`tools/list` branch treated every nonempty parameter object as a cursor. The
+log proves that branch was reached; it does not expose whether the actual
+request contained a null cursor, standard request metadata, or another field.
+Regressions must cover the actual supported host request shape and standard
+metadata while retaining explicit invalid-parameter handling. Preserve native
+freezes and keep corrected source, published package, installation, discovery
+and successful tool execution as separate evidence.

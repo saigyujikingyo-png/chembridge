@@ -7,7 +7,7 @@ This ledger records adoption and ownership separately from product acceptance. P
 | Product | Current owner evidence | Handoff/takeover | Rule adoption | Lifecycle work / required next gate |
 | --- | --- | --- | --- | --- |
 | Origin | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership verified; no Ultra transfer | Product lifecycle candidate reviewed | 0.2.12 public prerelease and controlled two-account installation accepted; exact release-head Windows/Ubuntu CI passed. A current Governance connector status call returned 0.2.12 on the intended device. Separate account UI, rollback and OS-event gates remain open |
-| UoE | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership and understanding verified | Product lifecycle candidate reviewed | 0.8.2 public prerelease at 88fbf736; PR merged as 01deb3b and six public assets verified. First external attempt stopped before mutation on an optional task-XML field. Adapter-only R3 correction passed 87 independent tests and real read-only task checks. A separate linked recovery entry is ready; installed 0.8.1 remains pending controlled upgrade |
+| UoE | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership and understanding verified | Product lifecycle candidate reviewed | 0.8.2 public prerelease at 88fbf736; PR merged as 01deb3b and six public assets verified. After R3 correction, the second attempt installed 0.8.2; all 3,337 files and the fresh actual status call were independently verified. Both background connections then failed due to nested-command Windows path parsing. Original submitted-start records remain under reconciliation; MATLAB was not reached |
 | MATLAB | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Published product commit 34e2cf1, pinned to shared 922d950 | Alpha.4 public engineering prerelease at package source 8dc506c4; four downloaded assets independently verified. Fixture-only validation head 0305bb83 and isolated P2 c92328e0 passed all five Windows/Ubuntu CI runs. P1 staged once with 4,058 files verified; matching Apply review reissued. Alpha.3 remains active pending normal host release and fresh admission; P2 remains source-only |
 | Mnova | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Adopted in isolated candidate 1f24531 | dev2 public prerelease and official installed plugin verified at e22718c; nine raw modules and 65 source/cache files match. After normal host reopen, Governance's actual status call at 16:56 UTC returned dev2; the earlier dev1 observation is retained. Original product/Hub work preserved; native writes and close disabled |
 | ChemDraw | Local Astra Max owns development; source architecture Astra Ultra; remote source model unresolved | MAX_VERIFYING; understanding accepted; historical native materials incomplete | Adopted in reviewed c6cfa3ec source | Diagnostic-only 0.2.0-preview.1 publicly released and locally installed through its reviewed installer and official MCP registration. Independent 51-file installed parity and connection readback passed; 79 focused tests passed, one privilege skip. Fresh host-model acceptance remains open; native execution stays frozen and legacy ChemAIst remains separate |
@@ -35,7 +35,7 @@ Status is evidence-based. PARTIAL below does not mean a passing gate. See [the i
 | 10 | No duplicate MCP child | PASSED bounded installed observation: one frontend per account; unrelated host frontends preserved. Real OS-event persistence remains open |
 | 11 | Reboot/login acceptance | OPEN; requires safe real OS-event window |
 | 12 | Network at login | OPEN; expected behavior must be implemented and verified |
-| 13 | Current installed fix | PASSED Origin 0.2.12 controlled upgrade; UoE and MATLAB repaired-version installation remains pending |
+| 13 | Current installed fix | PASSED bounded Origin 0.2.12 upgrade and UoE 0.8.2 installed-file/direct-tool verification; UoE background activation and MATLAB upgrade remain pending |
 | 14 | Origin ChatGPT reconnect | OPEN; initial remote call failed |
 | 15 | Fresh Origin tools | PARTIAL: personal-account Work discovered status tool; actual call failed, other-account/fixed-package gates remain open |
 | 16 | Bounded Origin call | PASSED current Governance connector status at 0.2.12 on the intended device; earlier 404 and personal Work failure retained. This does not establish both account UI routes |
@@ -114,3 +114,48 @@ UoE's actual activation journal confirms success. Nine isolated runner scenarios
 and the final 22-input read-only check passed. Original markers and failed logs
 remain intact; no new live Apply has occurred. A normal host release and fresh
 product admission are still required.
+
+## Second external attempt: installation and activation separated
+
+At 17:22–17:26 UTC, the corrected UoE maintenance reached INSTALLED_VERIFIED,
+preserved startup preferences, and submitted one startup per account. Neither
+connection became ready; both supervisors recorded CONNECT_FAILED and exited.
+The transaction remains RECONCILE_REQUIRED. MATLAB was not started. Governance
+independently verified all 3,337 installed manifest files, 3,772 old runtime backup
+files, and protected account files. A fresh actual model call returned 0.8.2.
+
+Original client logs identify a nested-command path-encoding regression: Windows
+backslashes were consumed by the client's command-string parser. Current exact
+owner inspection confirmed the old supervisors and their owned process chains
+have exited. A bounded source correction and explicit linked reactivation are
+being reviewed; no original install or uncertain startup is replayed, and the
+failed journal remains unchanged.
+
+## Reopened host: diagnostic discovery failure
+
+The reopened Codex host still failed to discover ChemDraw Companion. Official
+registration and all 51 installed package files remained correct. Exact host
+startup logs reported -32602 from the diagnostic server's nonempty tools/list
+parameter rejection. Local Product Max is implementing a bounded protocol
+compatibility repair and a new immutable preview. The earlier direct stdio
+PASS remains valid for its narrower empty-parameter fixture; actual host
+startup is FAILED, not accepted. Native implementation and incomplete
+historical transfer gates remain unchanged.
+
+A fresh actual Code Relay status call succeeded at runtime 0.1.1, with no
+configured provider and networking disabled. The docs.1 delivery revision did
+not change that runtime version; this check made no external provider call.
+
+## UoE controller recovery verified
+
+The [0.8.3 repair release](https://github.com/saigyujikingyo-png/edinburgh-study-agent/releases/tag/v0.8.3) is public at e8ddf3b7, with exact-head CI success. Governance independently downloaded the Windows archive and verified its controller against the exact Git source and reviewed overlay. The finite supplement applied that one file, restored the original task preferences and submitted one explicitly linked new startup per account. Both account connections retained the same healthy owners across observations at 18:16:41 and 18:17:19 UTC. The original failed installation/start journal is unchanged.
+
+The installed identity is **base 0.8.2 plus the released 0.8.3 controller overlay**, not a complete 0.8.3 installation. Actual local Codex and remote connector status calls both succeeded and correctly returned base version 0.8.2. Neither refreshed campus authentication. The repair does not establish per-account ChatGPT UI acceptance, campus content access, OS-event recovery or native acceptance. MATLAB remains unstarted; its original staged operation is preserved for a separate finite entry after normal host release.
+
+## ChemDraw compatibility repair delivered
+
+The [preview.2 release](https://github.com/saigyujikingyo-png/chemdraw-companion/releases/tag/v0.2.0-preview.2) at 6949b139 repairs standard request metadata handling. The recorded official Codex request contains `_meta.progressToken=0`; it reproduces preview.1 failure and succeeds with preview.2. Governance independently passed 12 diagnostic tests, verified 15 exact Git source mappings and all 51 package/installed files, downloaded the public ZIP and checked the peeled release tag. The normal upgrade retained all 51 preview.1 files. Official registration points to the exact preview.2 installed runtime and server; the official client discovers that installed server successfully.
+
+The [bounded repair PR 4](https://github.com/saigyujikingyo-png/chemdraw-companion/pull/4) remains draft against the existing lifecycle branch. A fresh desktop-model tool call is pending normal host reopen; discovery alone does not establish it. Native execution remains disabled and the earlier incomplete historical handoff remains open. No other product installation was repeated.
+
+The private MATLAB-only continuation retains the original once-staged operation, pins 11 reviewed inputs, and passed isolated success, failure and replay-refusal tests. It requires the user to exit the host normally, followed by fresh product admission. It does not rerun UoE installation or either prior shared maintenance entry.
