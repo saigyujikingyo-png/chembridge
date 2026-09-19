@@ -134,3 +134,7 @@ Regressions must cover the actual supported host request shape and standard
 metadata while retaining explicit invalid-parameter handling. Preserve native
 freezes and keep corrected source, published package, installation, discovery
 and successful tool execution as separate evidence.
+
+## Persist failures before shell error handling interrupts logging
+
+A private MATLAB-only wrapper used terminating PowerShell error handling around a native stderr pipeline. An isolated synthetic stderr/exit-20 case reproduced the outer exit receipt being skipped while only a screen STOP message remained. Capture native exit status and bounded stderr durably even when the command fails. A nested phase receipt containing only an exception type also cannot establish the precise failed invariant after reopening. Preserve original unknown outcomes and create separate read-only reconciliation evidence; do not rerun installation to repair a receipt.
