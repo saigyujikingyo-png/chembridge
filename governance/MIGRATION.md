@@ -69,6 +69,8 @@ The [UoE 0.8.2 prerelease](https://github.com/saigyujikingyo-png/edinburgh-study
 
 UoE and MATLAB require a coordinated normal host release before replacing occupied installed runtimes. A prepared package or read-only maintenance checker is not an installed upgrade. Product-specific native freezes, unresolved job outcomes and licence boundaries remain explicit. ChemDraw work remains local; incomplete remote handoff evidence is not converted into acceptance by installation authorization. Code Relay and Mnova must verify which published fixes are actually present in their installed packages rather than inventing a new runtime version for documentation-only changes.
 
+Observed package-cache, Windows bootstrap, immutable review and host-pickup lessons are recorded in [controlled maintenance review evidence](MAINTENANCE_REVIEW.md). These findings do not create new native or OS-event acceptance.
+
 ## Governance validation and unresolved constraints
 
 - Hub checker passed after new links/baseline; this accepts configuration only.
