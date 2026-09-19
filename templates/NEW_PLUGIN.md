@@ -9,3 +9,7 @@
 7. Save the environment and verify it appears in the cloud selector. Record model-based tasks and desktop dispatch only when separately exercised. Publish evidence and keep preview/stable claims accurate.
 
 Do not add a second paid model layer, a central database or a resident service merely to adopt these conventions. Keep each environment limited to the dependencies needed by that product.
+
+Before implementation, classify runtime components under [the lifecycle contract](../RUNTIME_LIFECYCLE.md) and complete [a lifecycle record](LIFECYCLE_RECORD.md). Define startup/shutdown/crash ownership, profile/session cardinality, readiness, retry cleanup, native/job lifetime, OS-event behavior and lifecycle-preserving installation/upgrade/removal. Record local and remote host acceptance separately; autostart is required only by the product's declared lifecycle.
+
+Assign one Product Max owner under [the ownership policy](../governance/OWNERSHIP.md), retain Governance High review of shared gaps, and use Ultra only for bounded expert questions. Copy all referenced shared contracts with the principles, or use explicit versioned references that remain resolvable in the product checkout. Existing-product migration requires a safe checkpoint, handoff and verified takeover receipt.

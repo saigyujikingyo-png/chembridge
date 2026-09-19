@@ -14,7 +14,9 @@ The current product scopes differ: Origin has a portable Python suite; ChemDraw 
 
 ## Shared rules
 
-DEVELOPMENT_PRINCIPLES.md is the current shared baseline, version 2026-09-14.1. Each participating repository must include that baseline and an AGENTS.md entry requiring it, while retaining product-specific constraints. Update known copies deliberately when the baseline changes; do not assume old tasks have reloaded it.
+DEVELOPMENT_PRINCIPLES.md is the current shared baseline, version 2026-09-19.1. Each participating repository must include that baseline and an AGENTS.md entry requiring it, while retaining product-specific constraints. Include the referenced runtime lifecycle and ownership contracts (or maintain equivalent versioned links and product records). Update known copies deliberately when the baseline changes; do not assume old tasks have reloaded it.
+
+Cloud setup profiles describe development checks, not installed runtime startup. Declare product lifecycle behavior under [the runtime contract](RUNTIME_LIFECYCLE.md); keep actual reboot, native and remote-account acceptance on the appropriate authorized device/host. A saved environment visible in one account is not proof of availability in another account or a current container/model pass.
 
 Keep code and dependency environments outside cloud-synced folders. The private university Chembridge folder remains the materials entrypoint. The hub contains small public documentation, a catalog and setup conventions. Cloud setup is not automatic local disk cleanup.
 

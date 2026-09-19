@@ -11,9 +11,9 @@
     "setup": "bash scripts/setup_codex_cloud.sh",
     "maintenance": "bash scripts/setup_codex_cloud.sh",
     "checks": [
-      ".venv/bin/python contracts/validate_mechanism_fixture.py examples/m2-beckmann-snake.json"
+      "git diff --check"
     ],
-    "scope": "Bounded architecture contract and logical fixture validation; not native rendering or model acceptance"
+    "scope": "Whitespace preflight only while runtime and benchmark/holdout gates remain frozen. The previous M2 fixture command is withdrawn. Authorized non-benchmark contract checks require product-owner review; this does not validate contracts, native rendering or model acceptance. Saved cloud commands require separate migration."
   },
   "uoe": {
     "setup": "bash scripts/setup_codex_cloud.sh",

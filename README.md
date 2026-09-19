@@ -28,6 +28,8 @@ Public source, documentation and releases belong on GitHub under an explicit lic
 
 ## Add a plugin
 
+Runtime semantics are defined in [the lifecycle contract](RUNTIME_LIFECYCLE.md), with [a product record template](templates/LIFECYCLE_RECORD.md). [Governance and ownership](governance/OWNERSHIP.md) separates shared Astra High review, long-term Product Max implementation and bounded Ultra consultation. [CB-2026-001](governance/incidents/CB-2026-001.md) tracks the open connection-recovery incident; the audit is not a recovery or reboot pass.
+
 Follow the [new-plugin checklist](templates/NEW_PLUGIN.md). Reuse shared rules and cloud setup conventions without merging unrelated runtimes. New repositories still need their own Codex environment and actual checks.
 
 ### Plugin plans

@@ -1,6 +1,6 @@
 # Chembridge contributor entrypoint
 
-Read DEVELOPMENT_PRINCIPLES.md (shared rule version 2026-09-14.1), then CLOUD_DEVELOPMENT.md and project-catalog.json before work. Chembridge is the umbrella for university convenience plugins, professional-software plugins, and agent workflows; it is not another name for Origin Companion.
+Read DEVELOPMENT_PRINCIPLES.md (shared rule version 2026-09-19.1), then CLOUD_DEVELOPMENT.md and project-catalog.json before work. For lifecycle or ownership work also read RUNTIME_LIFECYCLE.md and governance/OWNERSHIP.md. Chembridge is the umbrella for university convenience plugins, professional-software plugins, and agent workflows; it is not another name for Origin Companion.
 
 Use this repository for shared standards, new-plugin planning, project discovery and cloud setup templates. Implement a product in its own repository and matching cloud environment. Preserve its own native, safety, compatibility, ownership and acceptance requirements. Routine messages between existing user-owned Chembridge tasks are preauthorised under DEVELOPMENT_PRINCIPLES.md section 11; no per-message confirmation is needed within that scope. Preserve each task's objective, source ownership and separate acceptance evidence.
 
@@ -15,3 +15,5 @@ Configuration checks, portable tests, model-based cloud tasks, desktop handoff a
 When adding a new plugin, follow templates/NEW_PLUGIN.md and register its repository, setup and checks. Existing GitHub authorisation may cover a new repository, but a matching Codex cloud environment must still be created and verified. Do not claim automatic future environment creation.
 
 Every Chembridge plugin must implement and validate meaningful tool output schemas and structured results under DEVELOPMENT_PRINCIPLES.md section 12. Preserve media delivery and host compatibility, keep schemas compact, and record implementation/acceptance gaps separately.
+
+Sections 13–14 require explicit runtime lifecycle semantics and single Product Max ownership. Governance High reviews shared contracts and incidents; Ultra is consultation-only after verified handoff. Recheck current source and applicable installed/remote state. Preserve unresolved incident gates and other owners' uncommitted work.
