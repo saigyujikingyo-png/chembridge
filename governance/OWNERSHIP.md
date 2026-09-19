@@ -2,6 +2,14 @@
 
 Effective shared baseline: **2026-09-19.1**.
 
+## Current shared-principles task boundary
+
+User direction, effective 2026-09-19: this conversation is responsible only for principles shared across Chembridge projects. It maintains common requirements, terminology, ownership boundaries and policy-level decisions. Product reports may inform those principles; they are not an assignment to inspect code or independently reproduce product evidence.
+
+This conversation no longer performs code audits, source or patch reviews, product debugging, test execution, package/runtime inspection, installation recovery or product acceptance. Those activities belong to the accountable Product Max or a separately assigned review task. Product releases do not require technical sign-off from this conversation. A product may request clarification of a shared principle without transferring its implementation or acceptance responsibility here.
+
+This explicit task boundary takes precedence over the broader historical governance workflow below. Historical audit records remain evidence of past work, not standing authorization for this conversation to resume audits. Existing product safety gates and unresolved findings remain with their owners; this scope change does not waive or close them.
+
 Chembridge Governance & Architecture uses **Astra High** (`gpt-6-astra`, high) for shared principles, contracts, RFC/ADR, cross-product classification, migration audits, regression requirements and incident closure. Each product has exactly one accountable long-term **Astra Max** (`gpt-6-astra`, max) development owner for implementation, debugging, tests, installers, releases and routine architecture.
 
 **Astra Ultra** is reserved for bounded exceptional consultations with a specific hard question and return path to Governance High or Product Max. It does not retain parallel long-term product ownership. Record actual model/effort availability; a task title or requested preset is not execution evidence. This division does not replace the separate Terra max end-user benchmark.
