@@ -6,9 +6,9 @@ This ledger records adoption and ownership separately from product acceptance. P
 
 | Product | Current owner evidence | Handoff/takeover | Rule adoption | Lifecycle work / required next gate |
 | --- | --- | --- | --- | --- |
-| Origin | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership verified; no Ultra transfer | Rules read; product copy pending | Takeover accepted; source lifecycle fix underway. Review before deployment; two-account host and OS-event acceptance remain open |
-| UoE | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership and understanding verified | Rules read; product copy pending | Original two transports restored without identity changes; governance remote status passed at 0.8.1; source lifecycle corrections and remaining host/live/OS gates open |
-| MATLAB | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Published product commit 34e2cf1, pinned to shared 922d950 | On-demand coordinator + durable job scope; startup-attempt design pending; package document dependencies/native/OS acceptance remain separate |
+| Origin | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership verified; no Ultra transfer | Product lifecycle candidate reviewed | 0.2.12 controlled two-account installation and local readiness accepted; final source CI passed. A current Governance connector status call returned 0.2.12 on the intended device. Separate account UI, rollback and OS-event gates remain open |
+| UoE | Existing Astra Max, verified task metadata | MIGRATED: existing Max ownership and understanding verified | Product lifecycle candidate reviewed | 0.8.2 source, Windows package and five CI checks accepted; standalone maintenance preparation accepted. Installed 0.8.1 connections preserved pending normal host release and controlled upgrade |
+| MATLAB | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Published product commit 34e2cf1, pinned to shared 922d950 | Startup fix, distinct Alpha.4 engineering package and isolated P2 transaction primitives reviewed locally. Alpha.3 remains installed; live admission/provider integration and installation are separate gates |
 | Mnova | New Astra Max, actual turn metadata verified | MIGRATED; full receipt/hash and understanding accepted; original Ultra archived | Reviewed local increment; uncommitted, unpublished | Prior 18 product + 8 Hub files preserved with separate incremental patch; publication dependencies on dirty P0 remain explicit; native writes/I0/install gates unchanged |
 | ChemDraw | Local Astra Max intake active; source architecture Astra Ultra; remote source model unresolved | MAX_VERIFYING; architecture handoff verified; native handoff completion pending | Pending | All long-term architecture and implementation return to the local machine; remote source is handoff-only, then archive after verified transfer; retain branch boundaries/freeze and licensing gates |
 | Code Relay | Existing Astra Max, verified task metadata | MIGRATED; existing sole Max ownership and understanding verified | Published product commit 77469d2, pinned to shared 922d950 | On-demand execution; CLR-LC-01 through 05 remain open; no durable-service or paid API replay claim |
@@ -25,20 +25,20 @@ Status is evidence-based. PARTIAL below does not mean a passing gate. See [the i
 | --- | --- | --- |
 | 1 | Origin root cause | PARTIAL: unsafe source retry confirmed; historical duplicate chain and termination cause not reproduced |
 | 2 | Origin source of truth | CONFIRMED: packaged repo runner; school was one-off literal adaptation, formal generator missing |
-| 3 | Source fix | OPEN; assigned to Origin Max |
-| 4 | Regressions | OPEN |
+| 3 | Source fix | PASSED bounded review of Origin 0.2.12 lifecycle/admission/installer source; historical termination cause remains open |
+| 4 | Regressions | PASSED current portable/fixture CI at 1855cde8; installed/native/OS tests remain separately scoped |
 | 5 | Delayed ready | OPEN |
 | 6 | Failure after spawn | OPEN |
 | 7 | Personal profile regression | OPEN |
 | 8 | School profile regression | OPEN |
-| 9 | No same-profile duplicate tunnel | OPEN; absence in initial stopped snapshot is not a passing recovery test |
-| 10 | No duplicate MCP child | OPEN; legitimate host stdio children must be preserved |
+| 9 | No same-profile duplicate tunnel | PASSED bounded installed observation: one daemon per account after controlled upgrade; persistence across real OS events remains open |
+| 10 | No duplicate MCP child | PASSED bounded installed observation: one frontend per account; unrelated host frontends preserved. Real OS-event persistence remains open |
 | 11 | Reboot/login acceptance | OPEN; requires safe real OS-event window |
 | 12 | Network at login | OPEN; expected behavior must be implemented and verified |
-| 13 | Current installed fix | OPEN; initial Origin installed 0.2.11 |
+| 13 | Current installed fix | PASSED Origin 0.2.12 controlled upgrade; UoE and MATLAB repaired-version installation remains pending |
 | 14 | Origin ChatGPT reconnect | OPEN; initial remote call failed |
 | 15 | Fresh Origin tools | PARTIAL: personal-account Work discovered status tool; actual call failed, other-account/fixed-package gates remain open |
-| 16 | Bounded Origin call | OPEN; initial remote status 404; fresh personal-account Work call also failed tunnel-client-not-seen after tool discovery |
+| 16 | Bounded Origin call | PASSED current Governance connector status at 0.2.12 on the intended device; earlier 404 and personal Work failure retained. This does not establish both account UI routes |
 | 17 | UoE runtime-to-host chain | PASSED for bounded current transport/tool discovery/status in fresh personal and school ChatGPT Work conversations; campus session and durable OS recovery remain separate open gates |
 | 18 | UoE study_status | PASSED bounded governance-host remote/local and fresh personal/school Work calls at 0.8.1; UI selected Terra/max, resolved backend not independently attested; live_connection_checked=false |
 | 19 | UoE live school call | PARTIAL: after explicit user approval, one-page live Learn retrieval completed at 11:31 UTC; returned login landing page, authentication unknown, no course sections. Authenticated campus acceptance remains OPEN |
@@ -51,10 +51,20 @@ Status is evidence-based. PARTIAL below does not mean a passing gate. See [the i
 | 26 | Rule version | PUBLISHED 2026-09-19.1; adoption pending |
 | 27 | Ultra inventory | PARTIAL: six products/seven roles identified; remote ChemDraw model pending |
 | 28 | Ultra handoffs | PARTIAL: MATLAB, architecture ChemDraw and Mnova ready; native ChemDraw completion pending |
-| 29 | Max takeover verification | PARTIAL: Origin/UoE/MATLAB/Mnova/Code Relay receipts and understanding verified; ChemDraw pending |
+| 29 | Max takeover verification | PARTIAL: Origin/UoE/MATLAB/Mnova/Code Relay receipts and understanding verified; ChemDraw understanding accepted, native material transfer incomplete |
 | 30 | Single long-term owner/product | Existing Max retained; MATLAB/Mnova replacements verified; ChemDraw transfer pending |
 | 31 | Former Ultra consultation-only | MATLAB/Mnova original Ultra archived after verified transfer; ChemDraw pending |
 | 32 | Honest open-item retention | Active ledger; incident remains OPEN |
+
+## Authorized repaired-version rollout
+
+The owner explicitly authorized pushing the repaired versions and installing all of them on 2026-09-19. Product owners must finish publication and installation work within their verified product scope; the earlier missing-consent publication blocker is superseded by this new user instruction, subject to normal platform approval. Technical blockers are recorded separately from permission. Do not repeat an already completed healthy installation just because the authorization was renewed.
+
+Cross-product source-parity reviews found checkout/archive line-ending conversion being described as raw Git byte equality. The exact scope and additive-correction method are recorded in [source parity evidence](SOURCE_PARITY.md); existing frozen packages and the shared-rule version are unchanged.
+
+Origin's installed package was built from `f83f1ca1`; later fixture-only `51be2f09` and documentation-only `1855cde8` commits do not silently change that provenance. Exact final-head push and PR checks passed on Windows and Ubuntu. The profile command intentionally moved from the old executable to 0.2.12; identity, key references and the remaining complete profile structure were preserved. The failed initial whole-profile byte-equality assertion and additive reconciliation are retained.
+
+UoE and MATLAB require a coordinated normal host release before replacing occupied installed runtimes. A prepared package or read-only maintenance checker is not an installed upgrade. Product-specific native freezes, unresolved job outcomes and licence boundaries remain explicit. ChemDraw work remains local; incomplete remote handoff evidence is not converted into acceptance by installation authorization. Code Relay and Mnova must verify which published fixes are actually present in their installed packages rather than inventing a new runtime version for documentation-only changes.
 
 ## Governance validation and unresolved constraints
 
