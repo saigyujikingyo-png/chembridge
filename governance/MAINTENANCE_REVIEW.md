@@ -88,3 +88,20 @@ after normal host release. Prepared helpers, staged files, portable regressions
 and published packages are not evidence that those live upgrades ran. See the
 [current migration ledger](MIGRATION.md) for actual product delivery states and
 [source parity record](SOURCE_PARITY.md) for archive/Git byte comparisons.
+
+## Terminal observation and worker completion differ
+
+MATLAB Windows CI exposed tests that read quarantine immediately after observing
+a terminal job state. Source review and a deterministic two-owner regression
+confirmed that the execution lock and active marker still exclude another
+backend while quarantine publication completes. Synchronize fixtures with the
+actual worker or watcher before asserting completed side effects; retain a
+separate test for the intermediate state. Do not widen production deadlines to
+make a fixture pass.
+
+The reviewed repair changes only two test files. All five new Windows/Ubuntu
+CI runs passed; independent local verification passed 31 focused tests. The
+original package and every non-test tracked input remain unchanged. The public
+verification record separates the package source commit from the later test
+commit and retains the original failed CI. A temporary maintenance hold and
+revoked review were preserved as history before issuing a new matching review.
