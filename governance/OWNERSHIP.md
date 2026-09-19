@@ -27,4 +27,4 @@ Product-specific graph/toolbox/parser/layout behavior normally stays with Produc
 
 ## Active incident
 
-[CB-2026-001](incidents/CB-2026-001.md) remains open. Its initial audit is dated and must not be silently rewritten as current acceptance. Subsequent checkpoints belong in the migration ledger and incident addenda.
+[CB-2026-001](incidents/CB-2026-001.md) remains open. Its initial audit is dated and must not be silently rewritten as current acceptance. Subsequent checkpoints belong in the [migration ledger](MIGRATION.md) and incident addenda.
