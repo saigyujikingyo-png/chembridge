@@ -61,6 +61,20 @@ Use supported normal host release and fresh connection acceptance. Do not infer
 hot reload from installed files or terminate processes by basename to manufacture
 that result. Preserve another product's active work until its safe checkpoint.
 
+ChemDraw's diagnostic preview independently demonstrated raw Git-to-package and
+upstream-runtime parity, installed-file parity and official MCP connection
+readback. A direct probe of that registered command is still not a fresh model
+tool call. Its ordinary build command suppresses bytecode creation during package
+verification; diagnostic execution leaves the reviewed package unchanged. The
+installed tool reports native execution as frozen instead of importing historical
+native results into a new acceptance claim.
+
+Cross-product maintenance captures a fresh configuration baseline when its window
+begins. The MATLAB helper verifies that unrelated configuration survives its own
+switch, including a ChemDraw connection installed before that window. A stale
+whole-configuration snapshot must not become permission to overwrite another
+product's later registration.
+
 ## Process retirement does not resolve scientific outcome
 
 A later independently observed OS boot boundary can prove that a historical
