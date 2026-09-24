@@ -49,6 +49,14 @@
       "default_branch": "codex/initial-preview",
       "cloud_environment": "Chembridge / MATLAB Companion",
       "stage": "Windows alpha.3 R2 released; runtime/source 1b2eb73 passed Windows/Ubuntu CI, exact-package three-case native lifecycle and six scientific cases with 43 original-file readbacks on R2026a Update 5; current-device alpha.2-to-alpha.3 upgrade and registered-command probe passed with prior settings/jobs/alpha.2 preserved; one Codex kinetics job and seven-file delivery passed after operator/model corrections (Terra max requested, resolved model metadata unavailable); saved-cloud evidence remains historical, fresh-device and other-host gates open; R3 not started"
+    },
+    {
+      "id": "nmr",
+      "name": "NMR Companion",
+      "repository": "https://github.com/saigyujikingyo-png/nmr-companion",
+      "default_branch": "main",
+      "cloud_environment": "Chembridge / NMR Companion",
+      "stage": "0.1.0-alpha.1 developer preview; joint organic and relaxation workflows, shared editable workbench/MCP core; bc4b100 passed 91 tests on Windows and Ubuntu; full first-batch cases, bundled installation, named host/model acceptance and saved Codex cloud environment remain open"
     }
   ]
 }

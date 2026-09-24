@@ -60,5 +60,16 @@
       "uv run python scripts/check_release.py"
     ],
     "scope": "Portable Python core, structured output contracts, setup boundaries and actual MCP stdio checks. Dedicated Chembridge / MATLAB Companion environment saved; c5c7317 cloud-container checks passed (163 tests, one Windows-only skip). Native MATLAB, installation and host/model delivery retain separate product evidence."
+  },
+  "nmr": {
+    "setup": "bash scripts/setup_codex_cloud.sh",
+    "maintenance": "bash scripts/setup_codex_cloud.sh",
+    "checks": [
+      "uv run ruff check .",
+      "uv run ruff format --check src tests",
+      "uv run pytest -q",
+      "uv build"
+    ],
+    "scope": "Portable numerical/import core, shared project transactions, validated output contracts and actual local MCP stdio. Windows/Ubuntu CI passed at bc4b100. The profile is prepared; the dedicated saved Codex cloud environment and cloud-container run remain unverified. Full first-batch cases, instrument qualification, installed host/model workflows and delivery retain separate product evidence."
   }
 }
