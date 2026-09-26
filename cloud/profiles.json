@@ -60,5 +60,19 @@
       "uv run python scripts/check_release.py"
     ],
     "scope": "Portable Python core, structured output contracts, setup boundaries and actual MCP stdio checks. Dedicated Chembridge / MATLAB Companion environment saved; c5c7317 cloud-container checks passed (163 tests, one Windows-only skip). Native MATLAB, installation and host/model delivery retain separate product evidence."
+  },
+  "nmr": {
+    "setup": "bash scripts/setup_codex_cloud.sh",
+    "maintenance": "bash scripts/setup_codex_cloud.sh",
+    "checks": [
+      "uv run ruff check .",
+      "uv run pytest -q",
+      "node --check src/nmr_companion/static/app.js",
+      "node --check src/nmr_companion/static/batch.js",
+      "node --test tests/frontend/*.test.cjs",
+      "uv run nmr-companion desktop-check",
+      "uv build"
+    ],
+    "scope": "Joint organic and relaxation core, qualified 1D/processed 2D readers, editable evidence, structured MCP output and revision-bound delivery; native Qt offscreen widgets are source checks, not physical desktop acceptance. Legacy frontend checks use Node 22; Linux Qt checks require EGL/OpenGL libraries and fonts, as installed by product CI. This prepared profile does not establish a saved Codex cloud environment, container or model run. Native package, installed host/model, instrument and chemistry acceptance remain separate versioned evidence."
   }
 }
