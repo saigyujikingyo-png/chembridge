@@ -66,10 +66,13 @@
     "maintenance": "bash scripts/setup_codex_cloud.sh",
     "checks": [
       "uv run ruff check .",
-      "uv run ruff format --check src tests",
       "uv run pytest -q",
+      "node --check src/nmr_companion/static/app.js",
+      "node --check src/nmr_companion/static/batch.js",
+      "node --test tests/frontend/*.test.cjs",
+      "uv run nmr-companion desktop-check",
       "uv build"
     ],
-    "scope": "Portable numerical/import core, shared project transactions, validated output contracts and actual local MCP stdio. Windows/Ubuntu CI passed at bc4b100. The profile is prepared; the dedicated saved Codex cloud environment and cloud-container run remain unverified. Full first-batch cases, instrument qualification, installed host/model workflows and delivery retain separate product evidence."
+    "scope": "Joint organic and relaxation core, qualified 1D/processed 2D readers, editable evidence, structured MCP output and revision-bound delivery; native Qt offscreen widgets are source checks, not physical desktop acceptance. Legacy frontend checks use Node 22; Linux Qt checks require EGL/OpenGL libraries and fonts, as installed by product CI. This prepared profile does not establish a saved Codex cloud environment, container or model run. Native package, installed host/model, instrument and chemistry acceptance remain separate versioned evidence."
   }
 }

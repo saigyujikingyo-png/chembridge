@@ -56,7 +56,7 @@
       "repository": "https://github.com/saigyujikingyo-png/nmr-companion",
       "default_branch": "main",
       "cloud_environment": "Chembridge / NMR Companion",
-      "stage": "0.1.0-alpha.1 developer preview; joint organic and relaxation workflows, shared editable workbench/MCP core; bc4b100 passed 91 tests on Windows and Ubuntu; full first-batch cases, bundled installation, named host/model acceptance and saved Codex cloud environment remain open"
+      "stage": "0.2.0-alpha.2 native Windows Qt preview released from 3168f34; Windows 364 tests and Ubuntu 343 tests with 21 Windows-only skips passed; bundled upgrade/Verify, Windows backend, installed MCP and readable native views passed on one device; prior qualified native candidate completed a Codex edit and exact archive delivery/reopen, with identical final scientific/MCP bytes; real benchtop pairing, curated chemistry, physical usability, saved cloud environment and other hosts remain open"
     }
   ]
 }
